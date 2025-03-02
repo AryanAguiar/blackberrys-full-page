@@ -1,0 +1,499 @@
+body{
+    background-color: #edecec;
+}
+
+/* Banner Section */
+.cart-banner {
+    background-color: #2b2012;
+    color: #ffffff;
+    text-align: center;
+    font-size: 1.4em;
+    padding-top: 15px;
+    padding-bottom: 1px;
+    margin-top: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Pincode Section */
+.pincode-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Retains height */
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centers the section horizontally */
+    font-family: Arial, sans-serif;
+    width:97%; /* Smaller width */
+}
+
+.pincode-label {
+    font-size: 1rem;
+    color: #000;
+}
+
+.pincode-input-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.pincode-input {
+    padding: 8px;
+    width: 120px; 
+    font-size: 1rem;
+    border: none;
+}
+
+.pincode-input:focus{
+    outline: none;
+}
+
+.pincode-button {
+    padding: 8px 12px;
+    background-color: transparent;
+    color: #000;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+/* Empty Cart Section */
+.empty-cart {
+    text-align: center;
+    padding: 40px;
+    color: #888;
+}
+
+.empty-cart h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.empty-cart p {
+    font-size: 1em;
+    color: #555;
+}
+
+.continue{
+    background-color: #2b2012;
+    border: none;
+    padding: 20px;
+    font-size: large;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+}
+
+/* display cart styles */
+.container {
+    padding: 20px;
+}
+
+/* Header Row Styling */
+.cart-row {
+    display: flex;
+    align-items: center;
+    padding: 20px; /* Increased padding for better spacing */
+    font-weight: bold;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    background-color: white;
+    max-width: 97%; /* Set a wider maximum width */
+    margin: 15px auto; /* Center the container horizontally */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add subtle shadow for better visual appeal */
+}
+
+/* Column Styling */
+.cart-column {
+    flex: 1;
+    text-align: center;
+}
+
+/* Cart Item Section */
+.cart-item, .cart-price, .cart-quantity {
+    font-size: 18px;
+    color: #333 !important; 
+}
+
+/* Cart Items Styling */
+.cart-header1{
+    color: #000;
+}
+
+.cart-items {
+    margin-bottom: 20px !important;
+    background-color: #EDECEC !important;
+}
+
+.cartstuff{
+    display: flex;
+    flex-direction: column;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.cart-item img {
+    width: 162px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.cart-item-details {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 10px; 
+}
+
+.cart-item-title1 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.cart-item-price {
+    font-size: 14px;
+    color: #555;
+}
+
+/* Quantity and Remove Button */
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cart-quantity-input {
+    width: 50px;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.btn-remove {
+    margin-top: 40px;
+    border-radius: 50% !important;
+    background-color: #dedede ;
+    box-shadow: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    margin-left: 50px;
+}
+
+.fa-trash{
+    padding-left: 4px;
+}
+
+.size-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px;
+    margin-bottom: 5px;
+    border: 1px solid black;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: lighter;
+    color: black;
+    background-color: white;
+    width: fit-content;
+    gap: 10px;
+}
+
+.edit-icon {
+    margin-left: 8px;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 1 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg>');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    border: none;
+}
+
+/* Cart Total Section */
+.total-section {
+    padding: 45px;
+    margin-top: 15px;
+    background-color: white;
+    border-radius: 12px;
+    width: 97%; /* Adjusted width */
+    margin: 15px auto; /* Centers the section horizontally */
+}
+
+.cart-total1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-total-title {
+    font-size: 20px;
+    color: #000 !important;
+}
+
+.cart-total-price {
+    font-size: 20px;
+    color: #000 !important;
+}
+
+.btn-purchase{
+    margin-bottom: 100px;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4); /* Dark background */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#modal-item-title {
+    font-size: 16px;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+#no-thanks-btn, #save-for-later-btn {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+#no-thanks-btn {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+#save-for-later-btn {
+    background-color: #333;
+    color: #fff;
+}
+
+.message{
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-family: "Nokora", sans-serif;
+    align-items: center;
+    text-align: center;
+}
+
+/* Container for the product card */
+.product-card {
+    width: 350px; /* Set width of each product card */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image styling */
+.product-info img {
+    cursor: pointer;
+    width: 100%; 
+    height: 100%; 
+    max-height: 400px; /* Limit the height to prevent large images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Styling for product title and price */
+.product-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333; /* Dark color for text */
+}
+
+/* Price styling */
+.product-info p:last-child {
+    font-weight: bold;
+    color: #000000; 
+}
+
+/* Button styling */
+.add-to-cart {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#productGrid {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap in a row */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between cards */
+}
+
+.cart-quantity {
+    display: flex;
+    align-items: center;
+    border: 1px solid #000; /* Black border */
+    border-radius: 6px; /* Slightly rounded corners */
+    width: 100px; /* Adjust based on your design */
+    overflow: hidden;
+}
+
+.quantity-btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #000; /* Black text color */
+    padding: 5px 0;
+}
+
+.quantity-btn:active {
+    background-color: #f0f0f0; /* Light grey on click */
+}
+
+.cart-quantity-input {
+    flex: 1;
+    text-align: center;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding: 5px 0;
+    width: 30px; /* Adjust for input size */
+    -moz-appearance: textfield; /* Remove number input spinners */
+}
+
+.cart-quantity-input::-webkit-inner-spin-button,
+.cart-quantity-input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.fa-trash {
+    margin-right: 5px; /* Optional: Add spacing before the trash icon */
+}
+
+.remo{
+    padding-left: 50px;
+    background-color: #555;
+    border-radius: 50%;
+}
+
+/* Medium screens (Tablets) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .cart-banner {
+        font-size: 1em;
+    }
+
+    .pincode-section {
+        padding: 15px;
+    }
+
+    .pincode-section input[type="text"] {
+        width: 100%; /* Full width for mobile-friendly input */
+        margin-bottom: 10px;
+    }
+
+    .pincode-section button {
+        width: 100%; /* Full width for mobile-friendly button */
+        padding: 10px;
+        margin-top: 10px;
+    }
+
+    .empty-cart {
+        padding: 30px;
+    }
+
+    .continue {
+        font-size: 1.2em;
+        padding: 15px;
+    }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 767px) {
+    .cart-banner {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .pincode-section h3 {
+        font-size: 1.1em;
+    }
+
+    .pincode-section input[type="text"] {
+        width: 100%; /* Full width for mobile */
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    .pincode-section button {
+        width: 100%; /* Full width button */
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .empty-cart {
+        padding: 20px;
+    }
+
+    .empty-cart h2 {
+        font-size: 1.3em;
+    }
+
+    .empty-cart p {
+        font-size: 0.9em;
+    }
+
+    .continue {
+        font-size: 1.2em;
+        padding: 15px;
+        border-radius: 15px;
+    }
+}

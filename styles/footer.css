@@ -1,0 +1,109 @@
+.footer {
+    width: 100%;
+    background-color: #2b2012;
+    color: #fff;
+    padding: 60px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Flex container for left and right sections */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto 40px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.footer-left,
+.footer-right {
+    width: 48%;
+    min-width: 280px;
+    margin-bottom: 30px;
+}
+
+.footer-left h3 {
+    font-size: 1.8em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+.footer-left p {
+    font-size: 0.9em;
+    line-height: 1.7;
+    font-weight: normal;
+    font-style: italic;
+    color: #ffffffb3;
+    margin-bottom: 30px;
+}
+
+.footer-right h3 {
+    font-size: 1.5em;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+/* Contact links styling */
+.footer-right .footer-links {
+    list-style-type: none;
+    padding: 0;
+    columns: 2; /* Create two columns for links */
+}
+
+.footer-right .footer-links li {
+    margin: 5px 0;
+}
+
+.footer-right .footer-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.9em;
+}
+
+.footer-right .footer-links a:hover {
+    text-decoration: underline;
+}
+
+/* Footer bottom section for social media and address */
+.footer-bottom {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.footer-bottom p {
+    font-size: 1em;
+    color: #bbb;
+    margin: 10px 0;
+}
+
+.social-icons {
+    margin: 20px -10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+}
+
+.payment-cards {
+    width: 90%; 
+    max-width: 378px; 
+    min-width: 250px; 
+    height: 10vh; 
+    box-sizing: border-box;
+}
+
+.address{
+    font-size: 14px;
+}
+
+.footer-bottom p{
+    text-align: left;
+    font-size: 0.9em;
+    color: #ffffffb3;
+    line-height: 1.6;
+    max-width: 1600px;
+}

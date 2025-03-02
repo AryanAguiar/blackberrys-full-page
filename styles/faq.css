@@ -1,0 +1,133 @@
+/* General container styling */
+.container1 {
+    display: flex;
+    font-family: Arial, sans-serif;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    flex-wrap: wrap; /* Allows wrapping of content for better responsiveness */
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    background-color: #3d2a1a; /* Dark brown color */
+    color: white;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    height: auto; /* Adjust to content height */
+    max-height: 53vh; /* Limit maximum height */
+    overflow-y: auto; /* Add scroll if content exceeds height */
+}
+
+.sidebar-item {
+    padding: 15px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.sidebar-item:hover {
+    background-color: #2e1f14; /* Slightly darker brown on hover */
+}
+
+.sidebar-item.active {
+    background-color: #d3c5aa; /* Light tan color for active item */
+    color: #3d2a1a; /* Dark brown text color */
+}
+
+/* Content area styling */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #f8f8f8; /* Light background color for content area */
+    width: calc(100% - 250px); /* Content adjusts to sidebar width */
+}
+
+.content-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #ccc;
+    font-size: 1.1em;
+    color: #3d2a1a;
+}
+
+.img-container {
+    width: 100%; /* Ensure the container takes up the full width of its parent */
+    height: auto; /* Maintain aspect ratio */
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    padding-top: 50px;
+}
+
+.img-container img {
+    max-width: 100%; /* Ensure the image is responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Prevent image distortion */
+}
+
+/* Tablet Screens */
+@media (max-width: 991px) {
+    .container1 {
+        flex-direction: column; /* Stack sidebar and content on top of each other */
+    }
+
+    .sidebar {
+        width: 100%; /* Sidebar takes full width */
+        height: auto; /* Adjust sidebar height */
+    }
+
+    .content {
+        width: 100%; /* Content takes full width */
+        padding: 15px; /* Reduce padding on smaller screens */
+    }
+
+    .content-item {
+        font-size: 1em; /* Adjust font size for smaller screens */
+    }
+
+    .img-container {
+        padding-top: 30px; /* Adjust image padding */
+    }
+}
+
+/* Mobile Screens */
+@media (max-width: 767px) {
+    .sidebar {
+        width: 100%; 
+        padding: 5px 0; 
+    }
+
+    .content {
+        width: 100%; /* Content takes full width */
+        padding: 10px; /* Adjust padding for mobile */
+    }
+
+    .content-item {
+        font-size: 0.9em; /* Smaller font size for mobile */
+        flex-direction: column; /* Stack content vertically */
+        align-items: flex-start; /* Align items to the left */
+        padding: 10px 0;
+    }
+
+    .img-container {
+        padding-top: 120px; /* Adjust padding for smaller screens */
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+    .sidebar-item {
+        padding: 10px 15px; /* Further reduce padding for small screens */
+        font-size: 0.85em; /* Reduce text size for sidebar items */
+    }
+
+    .content-item {
+        font-size: 0.8em; /* Reduce text size further for small screens */
+    }
+
+    .img-container {
+        padding-top: 100px; /* Minimal padding for very small screens */
+    }
+}

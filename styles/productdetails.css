@@ -1,0 +1,854 @@
+/* product details */
+
+.go-back {
+    color: #2b2012;
+    text-decoration: none;
+}
+
+.go-back:hover {
+    color: orangered;
+}
+
+.container123 {
+    display: flex;
+    gap: 40px;
+    width: 90%;
+    padding: 20px;
+}
+
+.container123 img {
+    width: 900px;
+    height: 800px;
+}
+
+.container223 {
+    margin-top: 100px;
+    /* Remove any top margin */
+    padding: 5px 20px;
+}
+
+/* Image Section */
+.image-section {
+    flex: 2; /* Larger flex value makes the image section bigger */
+    position: relative;
+}
+
+.image-section img {
+    width: 100%;
+    max-width: 900px; /* Restrict maximum width for responsiveness */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+}
+
+/* Product Info Section */
+.info-section {
+    flex: 1; /* Smaller flex value compared to the image section */
+    margin-left: 20px; /* Add spacing between the image and text */
+}
+
+.info-section h1 {
+    font-size: 1.5em; /* Ensure the heading is noticeable */
+}
+
+.info-section p,
+.price,
+.emi-info {
+    font-size: 1em; /* Reduce text size to make the image more prominent */
+}
+
+.container456{
+    display: flex;
+    gap: 20px;
+}
+
+.shop-item-price{
+    font-size: 1.5rem !important;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border: none;
+    z-index: 10;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 10px;
+    height: 10px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.carousel-control-prev-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M11 1.5a1.5 1.5 0 0 1 0 2.12L6.12 8l4.88 4.38a1.5 1.5 0 0 1-2.12 2.12l-5.5-5.5a1.5 1.5 0 0 1 0-2.12l5.5-5.5a1.5 1.5 0 0 1 2.12 0z"/></svg>');
+    /* Inline SVG for left arrow */
+}
+
+.carousel-control-next-icon {
+    background-image: url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" fill="black" viewBox="0 0 16 16"><path d="M5 1.5a1.5 1.5 0 0 1 2.12 0l5.5 5.5a1.5 1.5 0 0 1 0 2.12l-5.5 5.5a1.5 1.5 0 0 1-2.12-2.12L9.88 8 5 3.62a1.5 1.5 0 0 1 0-2.12z"/></svg>');
+    /* Inline SVG for right arrow */
+}
+
+.carousel-control-prev {
+    left: 15px;
+}
+
+.carousel-control-next {
+    right: 15px;
+}
+
+.price {
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.emi-info {
+    font-size: 0.9em;
+    color: #888;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.shop-item-button {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+}
+
+.buttons button {
+    flex: 1;
+    padding: 12px;
+    font-size: 1em;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.buttons button:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+}
+
+.add-to-cart {
+    background-color: #ddd;
+    color: #333;
+}
+
+.buy-now {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+/* Delivery Section */
+.delivery-check {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    border: none;
+    border-bottom: 1px solid black;
+}
+
+.delivery-check input {
+    padding: 8px;
+    margin-right: 10px;
+    border: none;
+    flex: 1;
+}
+
+.delivery-check input:focus{
+    outline: none;
+}
+
+.delivery-check button {
+    padding: 8px 15px;
+    background-color: #ffffff00;
+    color: #000000;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Product Details Section */
+.details {
+    margin-top: 20px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.details-toggle {
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+}
+
+/* comment section */
+
+.comments-section {
+    max-width: 1300px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* Section Titles */
+.comments-section h2,
+.comments-section h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-align: center;
+}
+
+/* Comment Display */
+.comment {
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.comment p {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+.comment strong {
+    font-weight: bold;
+    color: #333;
+}
+
+/* Form Styling */
+.comment-form {
+    margin-top: 30px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+/* Form Labels */
+.comment-form label {
+    display: block;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+/* Input and Textarea Fields */
+.comment-form input[type="text"],
+.comment-form input[type="email"],
+.comment-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    color: #555;
+}
+
+.comment-form input[type="text"]:focus,
+.comment-form input[type="email"]:focus,
+.comment-form textarea:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+}
+
+/* Submit Button */
+.comment-form button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #333333;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.comment-form button:hover {
+    background-color: #333333;
+}
+
+.product-class{
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* Container for the product card */
+.product-card {
+    width: 350px; /* Set width of each product card */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image styling */
+.product-info img {
+    cursor: pointer;
+    width: 100%; 
+    height: 100%; 
+    max-height: 400px; /* Limit the height to prevent large images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Styling for product title and price */
+.product-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333; /* Dark color for text */
+}
+
+/* Price styling */
+.product-info p:last-child {
+    font-weight: bold;
+    color: #000000; 
+}
+
+/* Button styling */
+.add-to-cart {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#productGrid {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap in a row */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between cards */
+}
+
+
+.product-class{
+    padding-top: 100px;
+    text-align: center;
+}
+
+/* Container for the product card */
+.product-card {
+    width: 350px; /* Set width of each product card */
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Image styling */
+.product-info img {
+    cursor: pointer;
+    width: 100%; 
+    height: 100%; 
+    max-height: 400px; /* Limit the height to prevent large images */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    border-radius: 8px; /* Rounded corners for the image */
+}
+
+/* Styling for product title and price */
+.product-info p {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #333; /* Dark color for text */
+}
+
+/* Price styling */
+.product-info p:last-child {
+    font-weight: bold;
+    color: #000000; 
+}
+
+/* Button styling */
+.add-to-cart {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #000000; 
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    width: 100%;
+}
+
+#productGrid1 {
+    display: flex;
+    flex-wrap: wrap; /* Allow cards to wrap in a row */
+    justify-content: center; /* Center the cards horizontally */
+    gap: 20px; /* Space between cards */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .comments-section {
+        padding: 15px;
+    }
+
+    .comment-form {
+        padding: 15px;
+    }
+}
+
+/* popup styles */
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: rgb(0, 0, 0);
+    padding: 20px;
+    border-radius: 10px;
+    display: none;
+    /* Initially hidden */
+}
+
+#popup-close {
+    background-color: #333;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border: none;
+    border-radius: 4px;
+}
+
+#popup.hidden {
+    display: none;
+}
+
+#popup:not(.hidden) {
+    display: block;
+    /* Visible when not hidden */
+}
+
+/* Modal overlay */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modal-confirm,
+#modal-cancel {
+    background-color: #333;
+}
+
+/* Hidden state */
+.hidden {
+    display: none !important;
+}
+
+/* Modal content */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Overlay styles */
+#image-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Dimming effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#image-overlay.hidden {
+    display: none;
+}
+
+#overlay-image {
+    width: 400px;
+    /* Fixed width for smaller size */
+    height: auto;
+    /* Maintain aspect ratio */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#overlay-image:hover {
+    transform: scale(1.05);
+    /* Slight enlargement on hover */
+    cursor: pointer;
+}
+
+/* Accordion styles */
+.accordion {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    text-align: left;
+    outline: none;
+    font-size: 16px;
+    transition: background-color 0.4s ease;
+}
+
+.accordion.active, .accordion:hover {
+    background-color: #ddd;
+}
+
+/* Content Section */
+.accordion + .content-section {
+    display: none;
+    overflow: hidden;
+    padding: 0 10px;
+    background-color: #fafafa;
+    border: 1px solid #ccc;
+}
+
+.content-section p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.content h4 {
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+}
+
+/* Size Chart Container */
+.size-chart-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.size-button {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.selected {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+/* Responsive Styles */
+
+/* Medium screens (tablets) */
+@media (max-width: 991px) {
+    .accordion {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .content-section {
+        padding: 0 8px;
+    }
+
+    .content h4 {
+        font-size: medium;
+    }
+
+    .size-chart-container {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .size-button {
+        font-size: 14px;
+        padding: 5px 8px;
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 768px) {
+    .accordion {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .content-section {
+        padding: 0 5px;
+    }
+
+    .content h4 {
+        font-size: small;
+    }
+
+    .size-chart-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .size-button {
+        font-size: 12px;
+        padding: 4px 6px;
+        width: 100%; /* Full width for mobile for better accessibility */
+    }
+
+    .selected {
+        font-size: 14px;
+    }
+}
+
+.size-chart-link {
+    margin-left: 340px;
+    color: red;
+    text-decoration: none;
+}
+
+/* Responsive Styles */
+
+/* Medium screens (tablets) */
+@media (max-width: 991px) {
+    .size-chart-link {
+        margin-left: 200px; /* Adjust margin for medium screens */
+        font-size: 14px; /* Slightly smaller font size */
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 767px) {
+    .size-chart-link {
+        margin-left: 0; /* Center or reset margin for small screens */
+        font-size: 12px; /* Smaller font size */
+        text-align: center; /* Center-align the text */
+        display: block; /* Ensure it spans across the screen width */
+        margin-top: 10px; /* Add spacing above if needed */
+    }
+}
+
+.content-section h4{
+    cursor: pointer;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .container123 {
+        flex-direction: column;
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    .info-section h1 {
+        font-size: 1.6em;
+    }
+
+    .price {
+        font-size: 1.1em;
+    }
+
+    .comments-section {
+        max-width: 700px;
+    }
+}
+
+@media (min-width: 768px) {
+    .container123 {
+        flex-direction: row;
+        gap: 40px;
+    }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 767px) {
+    .container123 {
+        flex-direction: column;
+        width: 100%;
+        padding: 0 10px;
+        margin-top: 50px;
+    }
+
+    .go-back {
+        font-size: 1em;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    /* Image Section */
+    .image-section {
+        margin-bottom: 20px;
+    }
+
+    .image-section img {
+        width: 100%;
+        border-radius: 8px;
+    }
+
+    .carousel-control {
+        font-size: 20px;
+        padding: 6px;
+    }
+
+    /* Product Info Section */
+    .info-section h1 {
+        font-size: 1.5em;
+        margin: 0;
+    }
+
+    .price {
+        font-size: 1.1em;
+    }
+
+    /* Size and Purchase Options */
+    .size-selection {
+        gap: 5px;
+    }
+
+    .size-option {
+        padding: 6px 8px;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .add-to-cart,
+    .buy-now {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    /* Delivery Section */
+    .delivery-check {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .delivery-check input {
+        margin-bottom: 10px;
+    }
+
+    /* Product Details Section */
+    .details {
+        font-size: 0.85em;
+    }
+
+    /* Comments Section */
+    .comments-section {
+        max-width: 100%;
+        padding: 15px;
+    }
+
+    /* Comment form adjustments */
+    .comment-form {
+        padding: 15px;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+        font-size: 0.9em;
+    }
+
+    .comment-form button {
+        padding: 8px 10px;
+        font-size: 1em;
+    }
+}
+
+/* Extra Small Screens */
+@media (max-width: 480px) {
+
+    /* Comment font size and padding adjustments */
+    .comments-section h2 {
+        font-size: 1.5em;
+    }
+
+    .comments-section h3 {
+        font-size: 1em;
+    }
+
+    /* Form adjustments */
+    .comment-form label {
+        font-size: 0.9em;
+    }
+
+    .comment-form input,
+    .comment-form textarea {
+        font-size: 0.85em;
+    }
+
+    .comment-form button {
+        padding: 8px 10px;
+        font-size: 0.9em;
+    }
+}

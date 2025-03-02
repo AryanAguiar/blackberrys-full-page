@@ -1,0 +1,42 @@
+[
+    {
+        "id": "P001",
+        "title": "Formal Black Printed Shirt - Cedar",
+        "price": "₹2995",
+        "image": "images/displayimage1.webp",
+        "altimage1": "images/displayimage2.webp",
+        "altimage2": "images/displayimage5.webp",
+        "quantity": 1,
+        "emi": "₹748.75"
+    },
+    {
+        "id": "P002",
+        "title": "Formal Red Printed Shirt - Forest",
+        "price": "₹2595",
+        "image": "images/displayimage1A.png",
+        "altimage1": "images/displayimage2A.png",
+        "altimage2": "images/displayimage3A.png",
+        "quantity": 1,
+        "emi": "₹648.75"
+    },
+    {
+        "id": "P003",
+        "title": "Formal Black Check Shirt - Watson",
+        "price": "₹2995",
+        "image": "images/displayimage1B.webp",
+        "altimage1": "images/displayimage2B.webp",
+        "altimage2": "images/displayimage3B.webp",
+        "quantity": 1,
+        "emi": "₹748.75"
+    },
+    {
+        "id": "P004",
+        "title": "Formal Black Stripe Shirt - Isaac",
+        "price": "₹2915",
+        "image": "images/displayimage1C.webp",
+        "altimage1": "images/displayimage2C.webp",
+        "altimage2": "images/displayimage3C.webp",
+        "quantity": 1,
+        "emi": "₹728.75"
+    }
+]

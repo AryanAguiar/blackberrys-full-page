@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/productdetails.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/LOGOheaderenew.png" alt="Blackberrys" width="250" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="productsection.html">Shirts</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Formals</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Suits and Blazers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collections
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="collections.html">Tech Pro</a></li>
+                            <li><a class="dropdown-item" href="collections.html">BestSellers</a></li>
+                            <li><a class="dropdown-item" href="collections.html">Must Haves</a></li>
+                            <li><a class="dropdown-item" href="collections.html">Linen</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Wedding Store
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="productsection.html">Wedding suits</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Indo Western</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Suits and Blazers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="productsection.html">New Arrivals</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <button class="btn btn-outline-success" type="submit"><i
+                            class="fa-solid fa-magnifying-glass"></i></button>
+                    <input class="form-control me-2" type="search" placeholder="Search our store" aria-label="Search">
+                </form>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link nav-link2" href="wishlist.html">
+                            <i class="bi bi-heart"></i>
+                            <span>Wishlist</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link2 dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person"></i>Profile
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="login.html">Signup</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link nav-link2" href="#" id="cartLink">
+                            <i class="bi bi-cart"></i> Cart
+                        </a>
+                    </li>
+
+                    <div id="cartSidenav" class="sidenav">
+
+                        <div class="cart-header">
+                            <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav()">&times;</a>
+                            <h2>SHOPPING CART</h2>
+                        </div>
+
+
+                        <section class="container content-section">
+                            <div class="cart-items">
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Total:</strong>
+                                <span class="cart-total-price">₹0</span>
+                            </div>
+                        </section>
+                        <button class="btn-purchase1" onclick="window.location.href='cart.html'" type="button">BUY
+                            NOW</button>
+                        <button class="view-cart-btn" onclick="window.location.href='cart.html'">View Cart</button>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- product details section -->
+    <div class="container223">
+        <a href="home.html" class="go-back">Home</a>
+        <a href="productsection.html" class="go-back">/ Product Page</a>
+    </div>
+    <div class="container123">
+
+        <div id="carouselExample" class="image-section carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="shop-item-image" src="images/displayimage1.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/displayimage2.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/displayimage5.webp" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/displayimage6.webp" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+
+        <div class="info-section">
+            <div class="container456">
+                <h1 class="shop-item-title">Formal Black Printed Shirt - Cedar</h1>
+                <p class="shop-item-price price">₹ 2995</p>
+            </div>
+
+            <p class="emi-info">4 Monthly Payments of ₹749 Buy on EMI</p>
+            <a href="#" class="size-chart-link">Size Chart</a>
+            <div class="size-chart-container">
+                <div class="size-button">34</div>
+                <div class="size-button selected">36</div>
+                <div class="size-button">38</div>
+                <div class="size-button">40</div>
+                <div class="size-button">42</div>
+                <div class="size-button">44</div>
+                <div class="size-button">46</div>
+                <div class="size-button">48</div>
+                <div class="size-button">50</div>
+                
+            </div>
+
+            <div class="buttons">
+                <button class="btn shop-item-button" type="button">ADD TO CART</button>
+                <button class="buy-now" id="navigate-button">BUY NOW</button>
+                <button class="wishlist-button"><i class="fa-regular fa-heart"></i></button>
+            </div>
+
+            <div class="delivery-check">
+                <input type="text" placeholder="Enter Delivery Pincode">
+                <button>Check</button>
+            </div>
+
+            <div class="details">
+                <span class="details-toggle">Product Details & Care</span>
+                <p>Introduce classic charm to your collection with this Black Printed Formal Shirt, epitomizing refined
+                    grace. With its semi-cut away collar, it effortlessly merges contemporary allure with timeless
+                    appeal. Tailored in an India slim fit, it delivers a sleek silhouette, enhanced by full sleeves and
+                    a chest pocket for functionality. The striking black hue amplifies versatility, ensuring this
+                    collared shirt fits seamlessly into any wardrobe.
+                    <br>
+                    ● Stylish printed pattern enhances your style statement.
+                    <br>
+                    ● Combine this formal shirt for men with Blackberrys trousers and leather shoes for a professional
+                    look.
+                    <br>
+
+                    Fabric Composition
+                    100% Cotton
+                    Wash Care
+                    Gentle machine wash. We take pride in our premium quality and urge you to follow the instructions on
+                    the wash care label of the product for durability.
+                    Product Id
+                    MS013490Z1
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="image-overlay" class="hidden">
+        <div class="overlay-content">
+            <img id="overlay-image" src="" alt="Enlarged Product">
+        </div>
+    </div>
+
+    <div id="removeModal" class="modal">
+        <div class="modal-content">
+            <h3 id="modal-item-title"></h3>
+            <button id="no-thanks-btn">No, Thanks!</button>
+            <button id="save-for-later-btn">Save for Later</button>
+        </div>
+    </div>
+
+    <!-- Popup Modal -->
+    <div id="popup" class="popup hidden">
+        <span id="popup-message"></span>
+        <button id="popup-close" onclick="closePopup()">OK</button>
+    </div>
+
+    <div id="modal" class="hidden">
+        <div class="modal-content">
+            <p id="modal-message"></p>
+            <input id="modal-input" class="hidden" type="text" placeholder="Enter value here">
+            <div class="modal-buttons">
+                <button id="modal-confirm">Confirm</button>
+                <button id="modal-cancel">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- comment section -->
+    <div class="comments-section">
+        <h2>Comment Section</h2>
+
+        <!-- Display existing comments -->
+        <div class="comment">
+            <p><strong>John Doe:</strong> Great quality and fits perfectly! Highly recommended.</p>
+        </div>
+        <div class="comment">
+            <p><strong>Jane Smith:</strong> Love the fabric and the design, very comfortable.</p>
+        </div>
+
+        <hr>
+
+        <!-- Add a new comment form -->
+        <h3>Write a Review</h3>
+        <form class="comment-form" action="submit_comment.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comment">Comment:</label>
+            <textarea id="comment" name="comment" rows="4" required></textarea>
+
+            <button>Submit Review</button>
+        </form>
+    </div>
+
+    <!-- similar products -->
+    <h2 class="product-class">You May Also Like</h2>
+
+    <div class="product-grid" id="productGrid">
+        <!-- Products will be dynamically populated here -->
+    </div>
+
+    <!-- other products -->
+    <h2 class="product-class">Customers who bought this item also bought</h2>
+
+    <div class="product-grid1" id="productGrid1">
+        <!-- Duplicated products will be dynamically populated here -->
+    </div>
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>#KeepRising</h3>
+                <p>At Blackberrys, we redefine men's fashion by designing apparel that exudes confidence and sets new
+                    standards in style. Guided by customer insights and future trends, we create clothing that's more
+                    than just fabric—it's an embodiment of excellence. Our innovative approach ensures that every piece
+                    delivers quality and craftsmanship, helping the modern man stand out and succeed. With Blackberrys,
+                    you're not just wearing clothes; you're embracing a philosophy of achievement.</p>
+            </div>
+
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><a href="faq.html">FAQ's</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                    <li><a href="grevience.html">Grievance</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Meet The Team</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Bulk Order</a></li>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="faq.html">Support</a></li>
+                    <li><a href="#">Franchisee Enquiry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-left">
+                <p>Follow us :</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <p>
+                    Be the first to know about<br>
+                    new collections, exting offer, and much more!
+                </p>
+                <h5>
+                    Payment Method
+                </h5>
+                <img src="images/Paymentoptions.png" alt="Crds" class="payment-cards">
+            </div>
+
+            <div class="footer-right">
+                <h5>
+                    Address:
+                </h5>
+                <p class="address">Corporate Office- Mohan Clothing Co. Pvt. Ltd. Plot No. 58-59,Udyog Vihar, Phase – 4,
+                    Gurugram -122015, India<br>
+                    <br>
+                    Registered Office- 2E/22, Jhandewalan Extension, Near Central Bank,New Delhi -110055<br>
+                    <br>
+                    Customersupport@blackberrys.com<br>
+                    <br>
+                    8071811173 / 9810000209 (10:00 am - 6:00 pm)<br>
+                    <br>
+                    CIN-U74899DL1991PTC045024
+                </p>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>Discover Unparalleled Style With Blackberrys</p>
+            <p>Welcome to Blackberrys Clothing, where craftsmanship, sophistication, and contemporary design converge to
+                redefine the world of men's fashion. As a trend-setting menswear brand in India, we take pride in
+                curating an unparalleled collection that resonates with the discerning tastes of today's fashion-forward
+                individuals.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Function to populate the product grid with product data
+        function populateProductGrid(products) {
+            const productGrid = document.getElementById('productGrid');
+            let content = '';
+            const productGrid1 = document.getElementById('productGrid1');
+            let content1 = '';
+
+            products.forEach(product => {
+                // Create the card for each product
+                content += `
+                    <div class="product-card">
+                        <div onclick="viewProduct('${product.id}')" class="product-info">
+                            <img src="${product.image}" alt="${product.title}">
+                            <p>${product.title}</p>
+                            <p>${product.price}</p>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(event, '${product.title}', '${product.image}', ${product.price})">Add to Cart</button>
+                    </div>
+                `;
+            });
+
+            products.forEach(product => {
+                // Create the card for each product
+                content1 += `
+                    <div class="product-card">
+                        <div onclick="viewProduct('${product.id}')" class="product-info">
+                            <img src="${product.image}" alt="${product.title}">
+                            <p>${product.title}</p>
+                            <p>${product.price}</p>
+                        </div>
+                        <button class="add-to-cart" onclick="addToCart(event, '${product.title}', '${product.image}', ${product.price})">Add to Cart</button>
+                    </div>
+                `;
+            });
+
+            // Insert the generated content into the product grid
+            productGrid.innerHTML = content;
+            productGrid1.innerHTML = content1;
+        }
+
+        // Function to navigate to the product display page
+        function viewProduct(productId) {
+            // Redirect to the product display page with the product ID as a query parameter
+            window.location.href = `productdetails.html?id=${productId}`;
+        }
+
+        // Fetch the external JSON file and populate the product grid
+        fetch('scripts/products.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Failed to fetch product data');
+                }
+                return response.json();
+            })
+            .then(data => {
+                populateProductGrid(data);
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    </script>
+
+    <script>
+        // Selectors
+        const overlay = document.getElementById('image-overlay');
+        const overlayImage = document.getElementById('overlay-image');
+        const productImages = document.querySelectorAll('.carousel-item img'); // Select all product images
+
+        // Function to open the overlay
+        function openOverlay(event) {
+            const imgSrc = event.target.src; // Get clicked image's source
+            overlayImage.src = imgSrc; // Set the overlay image's source
+            overlay.classList.remove('hidden'); // Show the overlay
+        }
+
+        // Function to close the overlay
+        function closeOverlay() {
+            overlay.classList.add('hidden'); // Hide the overlay
+            overlayImage.src = ''; // Clear the image
+        }
+
+        // Add click listeners to all product images
+        productImages.forEach((img) => {
+            img.addEventListener('click', openOverlay);
+        });
+
+        // Add click listener to the overlay to close it when clicking outside the image
+        overlay.addEventListener('click', (event) => {
+            if (event.target !== overlayImage) {
+                closeOverlay();
+            }
+        });
+
+    </script>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/productdetails.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

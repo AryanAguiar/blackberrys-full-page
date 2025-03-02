@@ -1,0 +1,214 @@
+/* container section */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    flex-direction: column; /* Stack container and footer vertically */
+}
+
+/* container section */
+.container1 {
+    display: flex;
+    max-width: 1200px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+    margin-top: 90px;
+}
+
+.image-section {
+    width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+.image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.form-section {
+    width: 50%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form-section h2 {
+    color: #ff5a00;
+    margin-bottom: 20px;
+}
+
+.form-section label {
+    font-size: 0.9em;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.form-section input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.terms {
+    font-size: 0.8em;
+    color: #555;
+}
+
+.terms a {
+    color: #ff5a00;
+    text-decoration: none;
+}
+
+.terms input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.form-section button {
+    padding: 10px;
+    background-color: #ff5a00;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.help {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+.help a {
+    color: #ff5a00;
+    text-decoration: none;
+}
+
+.d-flex {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+/* Styles for the checkboxes */
+input[type="checkbox"] {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+    accent-color: #007bff; /* Customize the checkbox color */
+    cursor: pointer;
+}
+
+/* Styles for the paragraphs and labels */
+.w, label {
+    font-size: 14px;
+    color: #333;
+    margin: 0;
+    line-height: 1.5;
+}
+
+.whats{
+    color: green;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+    p, label {
+        font-size: 12px;
+    }
+}
+
+/* Tablet and smaller devices */
+@media (max-width: 991px) {
+    .container {
+        flex-direction: column; /* Stack image and form vertically on tablets */
+    }
+
+    .image-section {
+        width: 100%; /* Take full width on smaller screens */
+        height: 200px; /* Limit height for the image */
+    }
+
+    .form-section {
+        width: 100%; /* Take full width */
+        padding: 20px; /* Reduce padding */
+    }
+
+    .form-section h2 {
+        font-size: 1.5em; /* Increase heading size for readability */
+    }
+
+    .form-section label,
+    .form-section input[type="text"],
+    .terms,
+    .form-section button {
+        font-size: 1em; /* Adjust font size for readability */
+    }
+
+    .terms input[type="checkbox"] {
+        width: 18px; /* Adjust checkbox size */
+        height: 18px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 767px) {
+    .container {
+        padding: 10px; /* Add padding for mobile */
+    }
+
+    .image-section {
+        width: 100%; /* Full width for image on small screens */
+        height: 200px; /* Limit image height */
+    }
+
+    .form-section {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .form-section h2 {
+        font-size: 1.2em; /* Adjust font size for smaller screens */
+        text-align: center; /* Center the heading */
+    }
+
+    .form-section input[type="text"] {
+        font-size: 0.9em; /* Make input text a bit smaller */
+    }
+
+    .form-section button {
+        font-size: 1em; /* Adjust button font size */
+        padding: 12px; /* Increase button size for better touch targets */
+    }
+
+    .terms {
+        font-size: 0.75em; /* Reduce font size for terms on small screens */
+    }
+
+    .help {
+        font-size: 0.8em; /* Reduce font size for help text */
+        text-align: center; /* Center align help text */
+    }
+
+    .help a {
+        font-size: 0.9em; 
+    }
+}

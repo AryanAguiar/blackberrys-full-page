@@ -1,0 +1,405 @@
+/* General Container Styles */
+.container1 {
+    max-width: 80%;
+    margin: auto;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 25px;
+}
+
+/* Header Styles */
+h2.section-header {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #333;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Sections for Wishlist and Save for Later */
+.wishlist-container,
+.save-later-container {
+    flex: 1; /* Equal width for both sections */
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+    margin-bottom: 20px;
+    min-width: 300px; /* Ensures sections do not shrink too much */
+}
+
+
+/* Empty State for Items */
+.wishlist-items,
+.save-later-items {
+    min-height: 100px;
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center;
+    align-items: center;
+    color: #888;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: #fdfdfd;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+/* Button Styles */
+button {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:focus {
+    outline: none;
+}
+
+#toggle-button {
+    background-color: #333;
+    color: white;
+    font-size: 1.1rem;
+    padding: 12px 25px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+#toggle-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Save for Later Buttons */
+.save-for-later-button {
+    width: 48%;
+    padding: 10px;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.save-for-later-button.view-details {
+    background-color: #333;
+    color: white;
+}
+
+.save-for-later-button.remove-item {
+    background-color: #f44336;
+    color: white;
+}
+
+.save-for-later-button.remove-item:hover {
+    background-color: #d32f2f;
+}
+
+/* Flexbox for Save for Later Buttons */
+.save-later-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.btn-danger{
+    box-shadow: none !important;
+}
+
+.btn-secondary1{
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+    box-shadow: none;
+}
+.btn-secondary1:hover{
+    background-color: white;
+    color: rgb(0, 0, 0);
+    border: none;
+}
+
+.btn-primary, .btn-secondary{
+    background-color: #ffffff;
+    color: #333;
+    border: none;
+    min-width: 500px;
+    min-height: 50px;
+    border-radius: 0;
+    gap: 0;
+}
+
+.btn-primary.active, .btn-secondary.active {
+    background-color: #333; /* Change this color to whatever you prefer */
+    color: white;
+}
+
+/* Hover state for both primary and secondary buttons */
+.btn-primary:hover, .btn-secondary:hover {
+    background-color: #555; /* Slightly lighter shade for hover */
+}
+
+.card{
+    border-radius: 0;
+}
+
+.card-img-top{
+    border-radius: 0;
+}
+
+.btn123{
+    border: none;
+    box-shadow: none;
+}
+
+#wishlist {
+    margin-top: 20px;
+    display: flex;
+    gap: 20px; /* Add spacing between the header and the items */
+}
+
+/* Style for the wishlist header */
+.wishlist-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; /* Make it span the full container */
+    text-align: center;
+    color: #000000;
+}
+
+/* Style for the back button and delete button */
+.wishlist-header button {
+    margin-left: 10px; /* Add spacing between the buttons */
+}
+
+/* Style for the items container */
+.items-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center-align the items */
+    gap: 100px; /* Add spacing between items */
+}
+
+/* Individual card styling */
+.wishlist-card {
+    max-width: 200px; /* Limit the card width */
+    text-align: center; /* Center-align the text */
+}
+
+.backbutton{
+    box-shadow: none;
+    background-color: #fdfdfd;
+    width: 200px;
+    text-align: left;
+}
+
+.deletebutton{
+    background-color: #fdfdfd;
+    box-shadow: none;
+}
+
+.backbutton:hover{
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* General Card Container */
+.wishlist-preview-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card Styling */
+.card {
+    width: 18rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    overflow: hidden; /* Ensure content stays within the card */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Slight lift on hover */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+/* Card Image */
+.card-img-top {
+    width: 100%; /* Full width of the card */
+    height: 200px; /* Fixed height for consistent card size */
+    object-fit: cover; /* Ensure the image scales properly */
+}
+
+/* Card Body */
+.card-body {
+    padding: 15px;
+    text-align: center; /* Center-align text */
+}
+
+/* Card Title */
+.card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Product Count */
+.card-text {
+    font-size: 0.9rem;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+/* Card Container */
+.card31 {
+    height: 28rem;
+    width: 28rem; 
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;  
+}
+
+/* Card Body */
+.card31 .card-body {
+    text-align: center;
+    padding: 10px;
+}
+
+/* Card Title */
+.card31 .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+/* Card Text */
+.card31 .card-text {
+    padding-left: 10;
+    font-size: 0.9rem;
+    color: #777;
+    text-align: left;
+}
+
+/* Card Image */
+.card31 .card-img-top {
+    width: 100%; 
+    height: 70%; 
+    object-fit: contain; 
+    object-position: center; 
+    display: block; 
+    padding: 0; 
+    background-color: #fdfdfd; 
+}
+
+/* View List Span */
+.view-list-span {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    padding: 10px 20px;
+    border-radius: 4px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px auto; 
+    display: inline-block; 
+    font-weight: bold;
+}
+
+.card78{
+    border: 1px solid black;
+}
+
+.vire{
+    background-color: #343232;
+    color: white;
+    max-width: 100%;
+    padding: none;
+    margin: none;
+    cursor: pointer;
+}
+
+.view-details{
+    font-size: 20px;
+}
+
+.card9{
+    border: 1px solid black;
+}
+
+.click23{
+    color: white;
+    font-size: larger;
+}
+
+.hei{
+    max-width: 100%;
+    background-color: #343232;
+    cursor: pointer;
+}
+
+.vire1{
+    background-color: #d32f2f;
+    color: white;
+    font-size: larger;
+    cursor: pointer;
+}
+
+.btn-edit{
+    box-shadow: none;
+}
+
+.increment{
+    box-shadow: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .wishlist-preview-card {
+        margin: 0 auto; /* Center cards on smaller screens */
+    }
+
+    .card {
+        width: 90%; /* Adjust card width for smaller devices */
+    }
+}
+
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2.section-header {
+        font-size: 1.5rem;
+    }
+
+    #toggle-button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .save-for-later-button {
+        width: 100%;
+    }
+
+    .save-later-buttons {
+        flex-direction: column;
+    }
+}

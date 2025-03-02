@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/termsandconditions.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/LOGOheaderenew.png" alt="Blackberrys" width="250" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="productsection.html">Shirts</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Formals</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Suits and Blazers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collections
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="collections.html">Tech Pro</a></li>
+                            <li><a class="dropdown-item" href="collections.html">BestSellers</a></li>
+                            <li><a class="dropdown-item" href="collections.html">Must Haves</a></li>
+                            <li><a class="dropdown-item" href="collections.html">Linen</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Wedding Store
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="productsection.html">Wedding suits</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Indo Western</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Suits and Blazers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="productsection.html">New Arrivals</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="wishlist.html">
+                            <i class="bi bi-heart"></i> Wishlist
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person"></i>Profile
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="login.html">Signup</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cartLink">
+                            <i class="bi bi-cart"></i> Cart
+                        </a>
+                    </li>
+
+                    <div id="cartSidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav()">&times;</a>
+                        <h2>Your Cart</h2>
+                        <section class="container content-section">
+                            <h2 class="section-header">CART</h2>
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">ITEM</span>
+                                <span class="cart-price cart-header cart-column">PRICE</span>
+                                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                            </div>
+                            <div class="cart-items">
+
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Total</strong>
+                                <span class="cart-total-price">₹0</span>
+                            </div>
+                            <a href="cart.html">
+                                <button class="btn btn-primary btn-purchase1" type="button">PURCHASE</button>
+                            </a>
+                        </section>
+                        <button class="view-cart-btn" onclick="window.location.href='cart.html'">View Cart</button>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- container -->
+
+    <div class="container">
+
+        <p>By using the Website and its services, you agree to the following terms and conditions ("Terms of Use").
+            Please read them carefully.</p>
+        <br>
+        <p>If you use any of the services of the Website, its features and tools, you will be subject to the guidelines,
+            terms and agreements applicable to the Website. By the mere use of the Website, you shall be contracting
+            with MOHAN CLOTHING CO. PVT. LTD. These terms and conditions constitute binding obligations between you and
+            MOHAN CLOTHING CO. PVT. LTD. </p>
+        <br>
+        <p>All products/services and information displayed on the Website constitute an "invitation to offer". Your
+            order for purchase constitutes your "offer", which shall be subject to the terms and conditions as listed
+            below. MOHAN CLOTHING CO. PVT. LTD. reserves the right to accept or reject your offer. Our acceptance of
+            your order will take place upon dispatch of the product(s) ordered. No act or omission of MOHAN CLOTHING CO.
+            PVT. LTD. prior to the actual dispatch of the product(s) ordered will constitute acceptance of your offer.
+        </p>
+        <h3><b>Membership and Eligibility</b></h3>
+        <p>Use of the Website is available only to persons who are ‘competent to contract’ under the Indian Contract
+            Act, 1872. Accordingly, persons who are "incompetent to contract" within the meaning of the Indian Contract
+            Act, 1872, including un-discharged insolvents, etc. are not eligible to use the Website. However, minors
+            (persons who are under the age of 18 but are at least 13) may use this Website but only under the
+            supervision of parents or a legal guardian who agree(s) to be bound by these Terms of Use. In such cases,
+            the parents or legal guardians will transact on behalf of the minor as registered users of the Website and
+            will be bound by the Terms of Use of the Website. Minors are prohibited from purchasing any material, which
+            is for adult consumption or the sale or purchase of which, to/ by minors is strictly prohibited. </p>
+        <br>
+        <p>MOHAN CLOTHING CO. PVT. LTD. reserves the right to terminate your membership and refuse to provide you with
+            access to the Website if MOHAN CLOTHING CO. PVT. LTD. discovers that you are under the age of 18 years and
+            have not adhered to the membership and eligibility criteria set out above. The Website is not available to
+            persons whose membership has been suspended or terminated by MOHAN CLOTHING CO. PVT. LTD. for any reason
+            whatsoever. Unless otherwise specified, the materials on this Website are directed solely at those who
+            access this Website from India. MOHAN CLOTHING CO. PVT. LTD. makes no representation that any products or
+            services referred to in the materials on this Website are appropriate for use, or available outside India.
+            Those who choose to access this Website from outside India are responsible for compliance with local laws if
+            and to the extent local laws are applicable. MOHAN CLOTHING CO. PVT. LTD. will deliver the products only
+            within India and will not be liable for any claims relating to any products ordered from outside India,
+            except where in additional terms and conditions are provided which are product specific or order specific,
+            these terms and conditions supersede all previous representations, understandings, or agreements, if any,
+            and shall prevail notwithstanding any variance with any other terms of any order submitted.</p>
+        <h3><b>Account and Registration Obligations</b></h3>
+        <p>e will protect Your Information in accordance with our Privacy Policy. If you use the Website, (i) you are
+            responsible for maintaining the confidentiality of your account and password, (ii) for restricting access to
+            your computer, and (iii) you agree to accept responsibility for all activities that occur under your account
+            or password. MOHAN CLOTHING CO. PVT. LTD. shall not be liable to any person for any loss or damage which may
+            arise because of any failure by you to protect your password or account. If you know or suspect that someone
+            else knows your password, you should notify us by contacting us immediately on
+            customersupport@blackberrys.com. If MOHAN CLOTHING CO. PVT. LTD. has reason to believe that there is likely
+            to be a breach of security or misuse of the Website, we may require you to change your password or we may
+            suspend your account without any liability to MOHAN CLOTHING CO. PVT. LTD.
+
+            "Your Information" means as any information you provide to us in the registration, buying or listing
+            process, in the feedback area or through any other means, including the e-mail feature.
+
+            You also agree to:</p>
+        <br>
+        <p>Provide true, accurate, current and complete information about yourself that may be required during the
+            registration process, on the Website (such information being the "Joining Data").
+            Ensure that the Joining Data is maintained and promptly updated to keep it true, accurate, current and
+            complete. In case any information provided is untrue, inaccurate, incomplete, or not current or if there are
+            reasonable grounds for MOHAN CLOTHING CO. PVT. LTD.to suspect that the information provided is untrue,
+            inaccurate, incomplete or not current or is not in accordance with the Terms of Use, MOHAN CLOTHING CO. PVT.
+            LTD. shall have the right to indefinitely suspend or terminate your membership and refuse to provide you
+            with access to the Website.
+        </p>
+        <h3><b>Pricing Information</b></h3>
+        <p>While MOHAN CLOTHING CO. PVT. LTD. strives to provide accurate product and pricing information, pricing
+            errors or typographical errors may occur. With respect to items sold by MOHAN CLOTHING CO. PVT. LTD. on the
+            Website, the price of an item cannot be confirmed until you have placed an order. Sometimes the price online
+            may not match the price in a store. In our effort to be the lowest price provider in your particular
+            geographic region, store pricing will sometimes differ from online prices. Prices and availability are
+            subject to change without notice. In the event that a product is listed at an incorrect price or with
+            incorrect information due to an error in pricing or product information, MOHAN CLOTHING CO. PVT. LTD. shall
+            have the right, at its sole discretion, to refuse or cancel any orders placed for that product, unless the
+            product has been dispatched. In the event that an item is mispriced, MOHAN CLOTHING CO. PVT. LTD. may, at
+            its discretion, either contact you for instructions or cancel your order and notify you of such
+            cancellation. Unless the product ordered by you has been dispatched, your offer will not be deemed accepted
+            and MOHAN CLOTHING CO. PVT. LTD. will have the right to modify the price of the product and contact you for
+            further instructions using the e-mail address provided by you during the time of registration, or cancel the
+            order and notify you of such cancellation. </p>
+        <br>
+        <p>Please note that the payment may be processed prior to the dispatch of the product that you have ordered. If
+            we have to cancel the order after we have processed the payment, the said amount will be reversed back to
+            the account from which you had made payments in respect of the order.</p>
+        <br>
+        <p>This document is an electronic record in terms of Information Technology Act, 2000 and rules there under as
+            applicable and the amended provisions pertaining to electronic records in various statutes as amended by the
+            Information Technology Act, 2000. This electronic record is generated by a computer system and does not
+            require any physical or digital signatures.</p>
+
+    </div>
+
+    <!-- footer section -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>#KeepRising</h3>
+                <p>At Blackberrys, we redefine men's fashion by designing apparel that exudes confidence and sets new
+                    standards in style. Guided by customer insights and future trends, we create clothing that's more
+                    than just fabric—it's an embodiment of excellence. Our innovative approach ensures that every piece
+                    delivers quality and craftsmanship, helping the modern man stand out and succeed. With Blackberrys,
+                    you're not just wearing clothes; you're embracing a philosophy of achievement.</p>
+            </div>
+
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><a href="faq.html">FAQ's</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                    <li><a href="grevience.html">Grievance</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Meet The Team</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Bulk Order</a></li>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="faq.html">Support</a></li>
+                    <li><a href="#">Franchisee Enquiry</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-left">
+                <p>Follow us :</p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+                <p>
+                    Be the first to know about<br>
+                    new collections, exting offer, and much more!
+                </p>
+                <h5>
+                    Payment Method
+                </h5>
+                <img src="images/Paymentoptions.png" alt="Crds" class="payment-cards">
+            </div>
+
+            <div class="footer-right">
+                <h5>
+                    Address:
+                </h5>
+                <p class="address">Corporate Office- Mohan Clothing Co. Pvt. Ltd. Plot No. 58-59,Udyog Vihar, Phase – 4,
+                    Gurugram -122015, India<br>
+                    <br>
+                    Registered Office- 2E/22, Jhandewalan Extension, Near Central Bank,New Delhi -110055<br>
+                    <br>
+                    Customersupport@blackberrys.com<br>
+                    <br>
+                    8071811173 / 9810000209 (10:00 am - 6:00 pm)<br>
+                    <br>
+                    CIN-U74899DL1991PTC045024
+                </p>
+            </div>
+        </div>
+
+
+        <div class="footer-bottom">
+
+            <p>Discover Unparalleled Style With Blackberrys</p>
+            <p>Welcome to Blackberrys Clothing, where craftsmanship, sophistication, and contemporary design converge to
+                redefine the world of men's fashion. As a trend-setting menswear brand in India, we take pride in
+                curating an unparalleled collection that resonates with the discerning tastes of today's fashion-forward
+                individuals.</p>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+    <script src="scripts/store.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

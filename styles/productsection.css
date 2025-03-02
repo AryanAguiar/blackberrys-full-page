@@ -1,0 +1,505 @@
+/* General container styles */
+.container1 {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 20px;
+    border: none;
+    margin-bottom: 50px;
+}
+
+.container1 .hi{
+    text-decoration: none;
+    color: black;
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.cl {
+    display: flex; /* Make the container a flexbox */
+    justify-content: space-between; /* Space out the elements */
+    align-items: center; /* Vertically align the items */
+    padding: 0 20px; /* Add some padding for better appearance */
+    background-color: #ffffff; /* Optional: Background color for clarity */
+    width: 100%;
+    max-width: 1800px;
+    position: relative; /* Enable positioning of child elements */
+}
+
+.cl p {
+    margin: 0; /* Remove default margin */
+    font-size: 1.2em; /* Adjust font size */
+    color: #333; /* Optional: Text color */
+    text-align: center;
+    position: absolute; /* Position the p element */
+    left: 50%; /* Move to the middle horizontally */
+    transform: translateX(-50%); /* Center the element horizontally */
+}
+
+.cl nav {
+    display: flex; /* Flexbox for the buttons */
+    gap: 10px; /* Add spacing between buttons */
+    margin-left: auto; /* Push nav to the far right */
+}
+
+.cl .gh {
+    padding: 8px 12px; 
+    width: 150px;
+    font-size: 0.9em; 
+    background-color: #ffffff00; 
+    color: rgb(0, 0, 0);
+    border: 1px solid black; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.gh:hover{
+    background-color: #000000;
+    color: white;
+}
+
+.header h1 {
+    font-size: 2em;
+    color: #333;
+    margin: 0;
+}
+
+.header p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.header nav {
+    margin-top: 15px;
+}
+
+.header nav button:first-child {
+    margin-left: 0; /* Reset margin for proper alignment */
+}
+
+/* Modal styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex; /* Show modal when active */
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+.modal-actions {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+#modal-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Close button styling */
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+}
+
+/* Body overflow handling */
+body.modal-open {
+    overflow: hidden; /* Prevent background scrolling when modal is active */
+}
+
+.hi{
+    cursor: pointer;
+}
+
+/* Popup styling */
+.popup-container{
+    z-index: 9999;
+}
+
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    z-index: 1000;
+    display: none; /* Hidden by default */
+}
+
+.popup.show {
+    display: block; /* Show popup when active */
+}
+
+#popup-message {
+    font-size: 16px;
+    color: #333;
+}
+
+#popup-close {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#popup-close:hover {
+    background-color: #333333cd;
+}
+
+/* Product grid styles */
+.product-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.product {
+    width: calc(50% - 20px); 
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: center;
+}
+
+.image-container {
+    position: relative;
+    height: 700px; 
+    overflow: hidden;
+}
+
+.wishlist-button {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0); 
+    color: #000000; 
+    border: none;
+    border-radius: 50%; 
+    font-size: 16px;
+    cursor: pointer;
+    z-index: 10; 
+}
+
+.wishlist-button:hover{
+    background-color: rgba(255, 255, 255, 0); 
+}
+
+.shop-item-image {
+    cursor: pointer;
+}   
+
+.shop-item-title{
+    text-align: left;
+}
+
+.product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.product-details {
+    padding: 15px;
+    background-color: #fff;
+}
+
+.product-details h2 {
+    font-size: 1.2em;
+    color: #333;
+    margin: 0 0 5px;
+}
+
+.product-details .price {
+    color: #000000;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin: 5px 0;
+    text-align: left;
+}
+
+.product-details {
+    padding: 15px;
+    background-color: #fff;
+    text-align: left; 
+}
+
+.product-details button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 0.9em;
+    color: #000000;
+    background-color: #ffffff;
+    border: 1px solid black ;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+}
+
+.product-details button:hover {
+    background-color: #000000;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; 
+    margin-top: 15px;
+}
+
+/* General button styling */
+button {
+    padding: 10px;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    cursor: pointer;
+    border-radius: 3px;
+    transition: background-color 0.3s ease;
+    text-align: center;
+}
+
+
+
+/* Ensure links within buttons do not interfere with styling */
+.button-container a {
+    text-decoration: none; /* Remove underline from links */
+    display: block; /* Make the link fill the button */
+}
+a{
+    color: #fff;
+}
+
+/* New Arrival badge styles */
+.new-arrival {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: #e63946;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 0.8em;
+    font-weight: bold;
+    border-radius: 3px;
+}
+
+/* popup styles */
+
+#popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    display: none; /* Initially hidden */
+}
+
+#popup.hidden {
+    display: none;
+}
+
+#popup:not(.hidden) {
+    display: block; /* Visible when not hidden */
+}
+
+/* Modal overlay */
+#modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#modal-confirm, #modal-cancel{
+    background-color: #333;
+}
+
+/* Hidden state */
+.hidden {
+    display: none !important;
+}
+
+/* Modal content */
+.modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.modal-buttons button {
+    margin: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.modal-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.h4{
+    width: 100%;
+    max-width: 1701px;
+    background-color: #9a9a9a;
+    margin: 0;
+}
+
+.h4 h4{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 5px;
+    margin: 0;
+}
+
+
+/* Responsive styling */
+
+/* Medium screens (Tablets) */
+@media (max-width: 991px) and (min-width: 768px) {
+    .container1 {
+        width: 90%;
+    }
+
+    .header h1 {
+        font-size: 1.8em;
+    }
+
+    .product {
+        width: calc(50% - 20px); /* Two products per row */
+    }
+
+    .modal-content {
+        max-width: 600px;
+    }
+}
+
+/* Small screens (Mobile) */
+@media (max-width: 767px) {
+    .container1 {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header h1 {
+        font-size: 1.5em;
+    }
+
+    .product {
+        width: 100%; /* One product per row */
+        margin-bottom: 20px;
+    }
+
+    .image-container {
+        height: 400px; /* Reduced height for mobile screens */
+    }
+
+    .modal-content {
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 320px) {
+    .container1{
+        padding-top: 40px;
+    }
+}
+
+/* Tablets and medium screens */
+@media (max-width: 991px) {
+    .cl {
+        flex-direction: column; /* Stack items vertically */
+        text-align: center; /* Center align text */
+        gap: 20px; /* Increase spacing */
+    }
+
+    .cl .fst {
+        font-size: 1em; /* Reduce font size */
+    }
+
+    .cl nav {
+        justify-content: center; /* Center buttons */
+        gap: 15px; /* Increase spacing */
+    }
+}
+
+/* Mobile screens */
+@media (max-width: 767px) {
+    .cl {
+        padding: 10px; /* Adjust padding */
+    }
+
+    .cl .fst {
+        font-size: 0.9em; /* Further reduce font size */
+    }
+
+    .cl nav button {
+        padding: 8px 10px; /* Smaller buttons */
+        font-size: 0.8em; /* Smaller text size */
+    }
+}

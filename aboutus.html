@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/aboutus.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="home.html">
+                <img src="images/LOGOheaderenew.png" alt="Blackberrys" width="250" height="44">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            All
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="productsection.html">Shirts</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Formals</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Suits and Blazers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Collections
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="productsection.html">Tech Pro</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">BestSellers</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Must Haves</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Linen</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Wedding Store
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="productsection.html">Wedding suits</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Indo Western</a></li>
+                            <li><a class="dropdown-item" href="productsection.html">Suits and Blazers</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="productsection.html">New Arrivals</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="wishlist.html">
+                            <i class="bi bi-heart"></i> Wishlist
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <i class="bi bi-person"></i>Profile
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="login.html">Login</a></li>
+                            <li><a class="dropdown-item" href="login.html">Signup</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="cartLink">
+                            <i class="bi bi-cart"></i> Cart
+                        </a>
+                    </li>
+
+                    <div id="cartSidenav" class="sidenav">
+                        <a href="javascript:void(0)" class="closebtn" onclick="closeSidenav()">&times;</a>
+                        <h2>Your Cart</h2>
+                        <section class="container content-section">
+                            <h2 class="section-header">CART</h2>
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">ITEM</span>
+                                <span class="cart-price cart-header cart-column">PRICE</span>
+                                <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+                            </div>
+                            <div class="cart-items">
+
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Total</strong>
+                                <span class="cart-total-price">₹0</span>
+                            </div>
+                            <a href="cart.html">
+                                <button class="btn btn-primary btn-purchase1" type="button">PURCHASE</button>
+                            </a>
+                        </section>
+                        <button class="view-cart-btn" onclick="window.location.href='cart.html'">View Cart</button>
+                    </div>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Our Story Section -->
+    <section class="our-story">
+        <div class="container">
+            <h2>Our Story</h2>
+            <p>Founded with a passion for excellence, our brand has been dedicated to creating exceptional products for
+                decades. From humble beginnings to becoming a leader in the industry, our journey is one of dedication,
+                innovation, and a commitment to quality.</p>
+            <p>Each product reflects our dedication to craftsmanship and style, making sure every detail is perfected to
+                bring you the finest experience.</p>
+        </div>
+    </section>
+
+    <!-- Mission and Values Section -->
+    <section class="mission-values">
+        <div class="container">
+            <h2>Our Mission & Values</h2>
+            <div class="values">
+                <div class="value">
+                    <h3>Commitment to Quality</h3>
+                    <p>We are committed to providing the highest quality products that combine style, durability, and
+                        sustainability.</p>
+                </div>
+                <div class="value">
+                    <h3>Innovation</h3>
+                    <p>Innovation drives us to push boundaries and create unique designs that keep us ahead in the
+                        fashion industry.</p>
+                </div>
+                <div class="value">
+                    <h3>Customer Satisfaction</h3>
+                    <p>Your satisfaction is at the core of everything we do. We strive to exceed your expectations in
+                        every way.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section class="achievements">
+        <div class="container">
+            <h2>Our Achievements</h2>
+            <ul>
+                <li>Winner of multiple industry awards for design excellence.</li>
+                <li>Trusted by thousands of customers across the country.</li>
+                <li>Innovators in sustainable fashion, reducing our carbon footprint annually.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <!-- footer section -->
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h3>#KeepRising</h3>
+                <p>At Blackberrys, we redefine men's fashion by designing apparel that exudes confidence and sets new
+                    standards in style. Guided by customer insights and future trends, we create clothing that's more
+                    than just fabric—it's an embodiment of excellence. Our innovative approach ensures that every piece
+                    delivers quality and craftsmanship, helping the modern man stand out and succeed. With Blackberrys,
+                    you're not just wearing clothes; you're embracing a philosophy of achievement.</p>
+            </div>
+
+            <div class="footer-right">
+                <h3>Contact Us</h3>
+                <ul class="footer-links">
+                    <li><a href="faq.html">FAQ's</a></li>
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="termsandconditions.html">Terms & Conditions</a></li>
+                    <li><a href="grevience.html">Grievance</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Return Policy</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Meet The Team</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">Bulk Order</a></li>
+                    <li><a href="#">Track My Order</a></li>
+                    <li><a href="#">Blogs</a></li>
+                    <li><a href="faq.html">Support</a></li>
+                    <li><a href="#">Franchisee Enquiry</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>Follow us :</p>
+            <div class="social-icons">
+                <a href="#"><img src="images/facebookimg.png" alt="Facebook"></a>
+                <a href="#"><img src="images/twitterimg.png" alt="X"></a>
+                <a href="#"><img src="images/instaimg.png" alt="Instagram"></a>
+                <a href="#"><img src="images/linkedinimg.png" alt="LinkedIn"></a>
+                <a href="#"><img src="images/youtubeimg.png" alt="YouTube"></a>
+            </div>
+            <p>Corporate Office - Mohan Clothing Co. Pvt. Ltd. Plot No. 58-59, Udyog Vihar, Phase - 4, Gurugram -
+                122015, India</p>
+        </div>
+
+        <script src="scripts/script.js"></script>
+        <script src="scripts/store.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
