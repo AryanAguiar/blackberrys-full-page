@@ -5,20 +5,21 @@
 /* banner styles */
 
 .Banner {
-    display: inline-block;
-    text-decoration: none;
-    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
 }
 
 .Banner img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
+    max-width: 100%;  
+    height: auto;  
+    display: block;
+    margin: 0 auto;  
 }
 
 .Banner2 {
-    display: inline-block;
+    display: flex;
     text-decoration: none;
 }
 
@@ -27,6 +28,7 @@
     max-width: 100%;
     height: auto;
     border-radius: 8px;
+    padding-right: 10px;
 }
 
 .Banner3 {
